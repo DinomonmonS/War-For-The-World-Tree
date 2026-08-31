@@ -11,7 +11,7 @@ func _physics_process(delta: float) -> void:
 	if (velocity.x > 1 || velocity.x < 1):
 		sprite_2d.animation = "Run"
 	else:
-		sprite_2d.animation = "default"
+		sprite_2d.animation = "Idle"
 
 	# Add the gravity.
 	if not is_on_floor():

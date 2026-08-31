@@ -362,7 +362,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ggcr4"]
-size = Vector2(20, 25.333334)
+size = Vector2(20, 25)
 
 [node name="Node2D" type="Node2D" unique_id=1716544868]
 
@@ -377,5 +377,5 @@ animation = &"Idle"
 frame_progress = 0.42835745
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=272110427]
-position = Vector2(0, 3.333333)
+position = Vector2(0, 2.5)
 shape = SubResource("RectangleShape2D_ggcr4")
