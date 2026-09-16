@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://mpbpc232obj6"]
 
 [ext_resource type="Texture2D" uid="uid://dqer23dw6xa5a" path="res://Character Art/Appearing (96x96).png" id="1_kq5a6"]
-[ext_resource type="Script" uid="uid://dwkqpl73vxfdl" path="res://Characters/movement.gd" id="1_kttsq"]
+[ext_resource type="Script" uid="uid://rnh05ufqus4i" path="res://Characters/Controller2.gd" id="1_kttsq"]
 [ext_resource type="Texture2D" uid="uid://bywvpxi6o2o7s" path="res://Character Art/Pink Man/Fall (32x32).png" id="2_kttsq"]
 [ext_resource type="Texture2D" uid="uid://djbf0nj6whdju" path="res://Character Art/Pink Man/Hit (32x32).png" id="3_fq6qi"]
 [ext_resource type="Texture2D" uid="uid://dy5hrc6ubthq4" path="res://Character Art/Pink Man/Idle (32x32).png" id="4_ggcr4"]
