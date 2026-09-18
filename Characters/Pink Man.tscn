@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://mpbpc232obj6"]
 
 [ext_resource type="Texture2D" uid="uid://dqer23dw6xa5a" path="res://Character Art/Appearing (96x96).png" id="1_kq5a6"]
-[ext_resource type="Script" uid="uid://rnh05ufqus4i" path="res://Characters/Controller2.gd" id="1_kttsq"]
+[ext_resource type="Script" uid="uid://cehumdqlgma1u" path="res://Characters/P1.gd" id="1_kttsq"]
 [ext_resource type="Texture2D" uid="uid://bywvpxi6o2o7s" path="res://Character Art/Pink Man/Fall (32x32).png" id="2_kttsq"]
 [ext_resource type="Texture2D" uid="uid://djbf0nj6whdju" path="res://Character Art/Pink Man/Hit (32x32).png" id="3_fq6qi"]
 [ext_resource type="Texture2D" uid="uid://dy5hrc6ubthq4" path="res://Character Art/Pink Man/Idle (32x32).png" id="4_ggcr4"]
@@ -362,7 +362,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ggcr4"]
-size = Vector2(20, 25)
+size = Vector2(20, 23.833334)
 
 [node name="Node2D" type="Node2D" unique_id=1716544868]
 
@@ -373,9 +373,8 @@ script = ExtResource("1_kttsq")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D" unique_id=4820718]
 texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_tmubu")
-animation = &"Idle"
-frame_progress = 0.42835745
+animation = &"Run"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=272110427]
-position = Vector2(0, 2.5)
+position = Vector2(0, 0.24999952)
 shape = SubResource("RectangleShape2D_ggcr4")

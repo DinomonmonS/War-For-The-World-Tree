@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://bvpwsqt33xs2j"]
 
-[ext_resource type="Script" uid="uid://rnh05ufqus4i" path="res://Characters/Controller2.gd" id="1_6il2j"]
+[ext_resource type="Script" uid="uid://gthkf82ryj2f" path="res://Characters/P2.gd" id="1_6il2j"]
 [ext_resource type="Texture2D" uid="uid://dqer23dw6xa5a" path="res://Character Art/Appearing (96x96).png" id="1_7apur"]
 [ext_resource type="Texture2D" uid="uid://cimhb0bxkhx37" path="res://Character Art/Mask Dude/Fall (32x32).png" id="1_jhv5p"]
 [ext_resource type="Texture2D" uid="uid://sit3s7tsiwfd" path="res://Character Art/Mask Dude/Hit (32x32).png" id="2_7apur"]
@@ -368,7 +368,6 @@ size = Vector2(68, 80)
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=1638299711]
 script = ExtResource("1_6il2j")
-player_id = 1
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D" unique_id=4820718]
 texture_filter = 1
