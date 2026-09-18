@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://b1u0ia4ln3w1w"]
 
 [ext_resource type="Texture2D" uid="uid://dqer23dw6xa5a" path="res://Character Art/Appearing (96x96).png" id="1_hog38"]
-[ext_resource type="Script" uid="uid://dwkqpl73vxfdl" path="res://Characters/movement.gd" id="1_v0u87"]
+[ext_resource type="Script" uid="uid://gthkf82ryj2f" path="res://Characters/P2.gd" id="1_v0u87"]
 [ext_resource type="Texture2D" uid="uid://c3pdpvd0rah4l" path="res://Character Art/Ninja Frog/Fall (32x32).png" id="2_v0u87"]
 [ext_resource type="Texture2D" uid="uid://llqn0l0yuvwv" path="res://Character Art/Ninja Frog/Hit (32x32).png" id="3_fhamx"]
 [ext_resource type="Texture2D" uid="uid://c4qi3aj3cwmy3" path="res://Character Art/Ninja Frog/Idle (32x32).png" id="4_31j7u"]
@@ -421,9 +421,8 @@ script = ExtResource("1_v0u87")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D" unique_id=4820718]
 texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_tmubu")
-animation = &"Idle"
-frame_progress = 0.4549888
+animation = &"Jump 2"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=272110427]
-position = Vector2(0, 3.416667)
+position = Vector2(0, 1)
 shape = SubResource("RectangleShape2D_fq6qi")

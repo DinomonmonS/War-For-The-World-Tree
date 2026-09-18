@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://q415x26orgmy" path="res://Terrain (16x16).png" id="1_7oqlf"]
 [ext_resource type="PackedScene" uid="uid://bvpwsqt33xs2j" path="res://Characters/Mask Man.tscn" id="2_po8e2"]
-[ext_resource type="PackedScene" uid="uid://mpbpc232obj6" path="res://Characters/Pink Man.tscn" id="3_po8e2"]
+[ext_resource type="PackedScene" uid="uid://b1u0ia4ln3w1w" path="res://Characters/Ninja Frog.tscn" id="3_po8e2"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_d2gna"]
 texture = ExtResource("1_7oqlf")
@@ -239,6 +239,5 @@ layer_0/tile_data = PackedInt32Array(851968, 458752, 1, 851969, 458752, 0, 85197
 [node name="Node2D" parent="." unique_id=1716544868 instance=ExtResource("2_po8e2")]
 position = Vector2(75, 515)
 
-[node name="Node2D2" parent="." unique_id=631068059 instance=ExtResource("3_po8e2")]
-texture_filter = 1
-position = Vector2(1073, 506)
+[node name="Node2D3" parent="." unique_id=1007135306 instance=ExtResource("3_po8e2")]
+position = Vector2(1070, 566)
