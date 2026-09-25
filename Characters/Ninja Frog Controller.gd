@@ -13,22 +13,26 @@ func _physics_process(delta: float) -> void:
 		sprite_2d.animation = "Idle"
 		JumpCount = 0
 
+	
 	# Add the gravity.
-	if JumpCount == 2:
+	if is_on_floor():
+		JumpCount = 0
+	
+	if JumpCount == 0:
 		velocity += get_gravity() * delta
-		sprite_2d.animation = "Jump 2"
-	elif not is_on_floor():
+	
+	if JumpCount == 1:
 		velocity += get_gravity() * delta
 		sprite_2d.animation = "Jump"
 	
+	if JumpCount == 2:
+		velocity += get_gravity() * delta
+		sprite_2d.animation = "Jump 2"
 	
-	# Handle jump.
+	
 	if Input.is_action_just_pressed("Jump P2") and JumpCount < 2:
 		velocity.y = JUMP_VELOCITY
 		JumpCount += 1
-	
-	if Input.is_action_just_pressed("Jump P2") and is_on_floor():
-		velocity.y = JUMP_VELOCITY
 	if Input.is_action_just_pressed("Light P2"):
 		pass
 	if Input.is_action_just_pressed("Medium P2"):
