@@ -1,0 +1,56 @@
+[gd_scene format=3 uid="uid://dhhh0mf5ojwqs"]
+
+[ext_resource type="Script" uid="uid://bq0vmpkhwff2o" path="res://Menus/CHMenu.gd" id="1_pbd0h"]
+
+[node name="Menu" type="Node2D" unique_id=1577421315]
+script = ExtResource("1_pbd0h")
+
+[node name="button_manager" type="Control" parent="." unique_id=1402924087]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Frog" type="Button" parent="button_manager" unique_id=1311750743]
+layout_mode = 0
+offset_left = 25.0
+offset_right = 264.0
+offset_bottom = 157.0
+text = "Ninja Frog
+"
+
+[node name="Mask" type="Button" parent="button_manager" unique_id=2102015335]
+layout_mode = 0
+offset_left = 320.0
+offset_top = 3.0
+offset_right = 559.0
+offset_bottom = 160.0
+text = "Masked Man
+"
+
+[node name="Pink" type="Button" parent="button_manager" unique_id=267041835]
+layout_mode = 0
+offset_left = 601.0
+offset_top = 3.0
+offset_right = 840.0
+offset_bottom = 160.0
+text = "Pink Guy"
+
+[node name="Back" type="Button" parent="button_manager" unique_id=1891739017]
+layout_mode = 0
+offset_left = 323.0
+offset_top = 192.0
+offset_right = 562.0
+offset_bottom = 349.0
+text = "Return
+"
+
+[connection signal="pressed" from="button_manager/Frog" to="." method="_on_frog_pressed"]
+[connection signal="pressed" from="button_manager/Frog" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="button_manager/Mask" to="." method="_on_mask_pressed"]
+[connection signal="pressed" from="button_manager/Mask" to="." method="_on_options_pressed"]
+[connection signal="pressed" from="button_manager/Pink" to="." method="_on_pink_pressed"]
+[connection signal="pressed" from="button_manager/Pink" to="." method="_on_quit_pressed"]
+[connection signal="pressed" from="button_manager/Back" to="." method="_on_back_pressed"]
+[connection signal="pressed" from="button_manager/Back" to="." method="_on_quit_pressed"]
+[connection signal="pressed" from="button_manager/Back" to="." method="_on_back2_pressed"]

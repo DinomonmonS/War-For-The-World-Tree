@@ -20,14 +20,19 @@ func _physics_process(delta: float) -> void:
 	
 	if JumpCount == 0:
 		velocity += get_gravity() * delta
-	
+		if T == 1:
+			velocity += get_gravity() * delta 
 	if JumpCount == 1:
 		velocity += get_gravity() * delta
 		sprite_2d.animation = "Jump"
+		if T == 1:
+			velocity += get_gravity() * delta 
 	
 	if JumpCount == 2:
 		velocity += get_gravity() * delta
 		sprite_2d.animation = "Jump 2"
+		if T == 1:
+			velocity += get_gravity() * delta 
 	
 	
 	if Input.is_action_just_pressed("Jump P2") and JumpCount < 2:
