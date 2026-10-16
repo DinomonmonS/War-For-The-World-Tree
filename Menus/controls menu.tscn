@@ -1,0 +1,56 @@
+[gd_scene format=3 uid="uid://bsvolwrfia515"]
+
+[ext_resource type="Script" uid="uid://43c1b1vnvpsp" path="res://Menus/controls.gd" id="1_pnc5j"]
+
+[node name="Controls" type="Node2D" unique_id=1670234441]
+script = ExtResource("1_pnc5j")
+
+[node name="Label" type="Label" parent="." unique_id=386669298]
+offset_right = 92.0
+offset_bottom = 231.0
+text = "Player 1
+A = Left
+D = Right
+W = Jump
+S = Crouch
+J = Light
+K = Medium
+L = Heavy
+; =  Special"
+
+[node name="Label2" type="Label" parent="." unique_id=253365208]
+offset_right = 92.0
+offset_bottom = 231.0
+text = "Player 1
+A = Left
+D = Right
+W = Jump
+S = Crouch
+J = Light
+K = Medium
+L = Heavy
+; =  Special"
+
+[node name="Label3" type="Label" parent="." unique_id=1370661087]
+offset_left = 120.0
+offset_right = 212.0
+offset_bottom = 231.0
+text = "Player 2
+◀️ = Left
+▶️ = Right
+🔼  = Jump
+🔽 = Crouch
+Keypad 1= Light
+KP2 = Medium
+KP3 = Heavy
+KP5 =  Special"
+
+[node name="Button" type="Button" parent="." unique_id=989809141]
+offset_left = 6.0
+offset_top = 406.0
+offset_right = 324.0
+offset_bottom = 578.0
+text = "Return
+"
+
+[connection signal="pressed" from="Button" to="." method="_on_return_pressed"]
