@@ -36,17 +36,15 @@ offset_right = 840.0
 offset_bottom = 160.0
 text = "Pink Guy"
 
-[node name="Back" type="Button" parent="button_manager" unique_id=1891739017]
+[node name="Button" type="Button" parent="button_manager" unique_id=1247752849]
 layout_mode = 0
-offset_left = 323.0
-offset_top = 192.0
-offset_right = 562.0
-offset_bottom = 349.0
-text = "Return
-"
+offset_left = 320.0
+offset_top = 211.0
+offset_right = 563.0
+offset_bottom = 371.0
+text = "Return"
 
 [connection signal="pressed" from="button_manager/Frog" to="." method="_on_frog_pressed"]
 [connection signal="pressed" from="button_manager/Mask" to="." method="_on_mask_pressed"]
 [connection signal="pressed" from="button_manager/Pink" to="." method="_on_pink_pressed"]
-[connection signal="pressed" from="button_manager/Back" to="." method="_on_back_pressed"]
-[connection signal="pressed" from="button_manager/Back" to="." method="_on_quit_pressed"]
+[connection signal="pressed" from="button_manager/Button" to="." method="_on_button_pressed"]

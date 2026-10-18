@@ -15,6 +15,10 @@ run/main_scene="uid://gdrn5gunm4vi"
 config/features=PackedStringArray("4.7", "Mobile")
 config/icon="res://icon.svg"
 
+[autoload]
+
+DataStorage="*uid://cto41v7acyvv7"
+
 [display]
 
 window/stretch/mode="canvas_items"
